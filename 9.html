@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9</title>
+</head>
+<body>
+      
+         <button onclick='login()'>Login</button>
+         <button onclick="logout()">Logout</button><br><br>
+         <h1 id="head"></h1>
+
+     
+      <script src="9.js"></script>
+</body>
+</html>
+
+const file=document.getElementById('file');
+const image=document.getElementById('image');
+file.onchange=function(){
+    image.src=URL.createObjectURL(file.files[0]);
+}
+image.style.width='200px';
